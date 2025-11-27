@@ -2,7 +2,7 @@ package exo1.with_builder.builder;
 
 import java.util.Map;
 
-class HttpRequest {
+public class HttpRequest {
 	private String method;
 	private String url;
 	private String host;
@@ -13,7 +13,7 @@ class HttpRequest {
 	private boolean followRedirects;
 	private int timeoutMs;
 
-	public HttpRequest(String method, String url, String host, Map<String, String> headers,
+	 HttpRequest(String method, String url, String host, Map<String, String> headers,
 			Map<String, String> queryParams, String body, boolean keepAlive, boolean followRedirects, int timeoutMs) {
 		this.method = method;
 		this.url = url;
